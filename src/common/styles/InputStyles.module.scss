@@ -1,0 +1,41 @@
+.default {
+  background: #333;
+  width: 350px;
+  border: 1px solid #444;
+  color: #fff;
+  height: 50px;
+  padding-left: 49px;
+  border-radius: 30px;
+  outline: none;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  overflow: visible;
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 600px) {
+    min-width: 350px;
+  }
+}
+
+.defaultTextArea {
+  background: #333;
+  max-width: 730px;
+  min-width: 730px;
+  border: 1px solid #444;
+  color: #fff;
+  border-radius: 30px;
+  outline: none;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  height: 130px;
+  padding: 12px 0 15px 49px;
+  margin-bottom: 20px;
+  @media screen and (max-width: 800px) {
+    min-width: 500px;
+  }
+  @media screen and (max-width: 600px) {
+    min-width: 350px;
+
+  }
+}

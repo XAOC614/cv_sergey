@@ -1,0 +1,82 @@
+@import "../../../assets/SASS/variables";
+.project {
+    position: relative;
+    overflow: hidden;
+    justify-self: center;
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+}
+.project:hover .project__pic {
+    transform: scale(1.05);
+}
+.project__pic {
+    width: 100%;
+    height: 100%;
+    transition: .15s;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.project__title {
+    position: absolute;
+    color: $mainColor;
+    font-weight: 700;
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(235,240,15,1) 0%, rgba(0,0,0,0.7) 0%);
+}
+
+.tech__stack {
+    color: $mainColor;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    bottom: 0;
+    left:0;
+    z-index: 3;
+}
+.project__link {
+    font-size: 20px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $projectHoverColor;
+    z-index: 4;
+    transition: 1s;
+}
+.project__link:hover {
+    opacity: 1;
+    transition: 1s;
+}
+.project__link::after {
+    content: 'View more';
+    position: absolute;
+    font-size: 20px;
+    top: 45%;
+    left: 35%;
+}
+
+@media screen and (max-width: 960px)  {
+    .project {
+        justify-self: center;
+    }
+}
+@media screen and (max-width: 600px)  {
+    .project {
+        max-width: 300px;
+        max-height: 300px;
+    }
+}

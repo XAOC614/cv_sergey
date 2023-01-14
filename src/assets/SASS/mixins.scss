@@ -1,0 +1,9 @@
+@import '../SASS/variables';
+
+@mixin text($fontSize, $lineHeight, $color, $fontWeight,$textTransform) {
+  font-size: $fontSize;
+  line-height: 22px;
+  color: $color;
+  font-weight: $fontWeight;
+  text-transform: $textTransform;
+}

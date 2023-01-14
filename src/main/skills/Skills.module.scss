@@ -1,0 +1,19 @@
+@import "../../assets/SASS/variables";
+.skills {
+    min-width: 40%;
+}
+
+.skill__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.title {
+    margin-bottom: 50px;
+    font-size: 23px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+

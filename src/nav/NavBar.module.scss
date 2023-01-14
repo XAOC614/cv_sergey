@@ -1,0 +1,42 @@
+@import "../assets/SASS/variables";
+.header__nav_closed {
+    opacity: 0;
+    transition: 1s;
+}
+
+.header__nav_open {
+    opacity: 1;
+    transition: 1s;
+}
+
+.header__nav_list {
+    min-width: 30vw;
+    gap: 2px;
+}
+
+.header__nav__link {
+    font-size: 20px;
+    &:hover {
+        color: $mainColor;
+    }
+}
+.active {
+    font-size: 20px;
+    color: $mainColor;
+}
+.header__nav__list_item:last-child {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 500px) {
+    .header__nav_closed {
+        opacity: 1;
+        width: 100%;
+    }
+    .header__nav_list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}

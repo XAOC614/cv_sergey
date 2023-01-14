@@ -1,0 +1,82 @@
+@import "./src/assets/SASS/variables";
+
+.infoList__text {
+  display: flex;
+  flex-direction: column;
+  min-width: 35%;
+  margin-right: 70px;
+}
+
+.infoList {
+  position: relative;
+  height: 100%;
+}
+.infoList__circle__top {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  height: 12px;
+  width: 12px;
+  border-radius: 12px;
+  background: $mainColor;
+}
+.infoList__circle__bot {
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  height: 12px;
+  width: 12px;
+  border-radius: 12px;
+  background: $mainColor;
+}
+.infoList::before {
+  position: absolute;
+  left: -15px;
+  top: 0;
+  content: '';
+  width: 1px;
+  height: 100%;
+  background: $mainColor;
+}
+.infoList__item {
+  position: relative;
+}
+.infoList__title {
+  margin-bottom: 50px;
+  font-size: 23px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.infoList__item__date {
+  font-size: 13px;
+  opacity: .8;
+  font-weight: 400;
+}
+
+.knowledge__title {
+  max-width: 200px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+.separator {
+  display: inline-block;
+  width: 10px;
+  background: #555;
+  height: 2px;
+  margin: 0 7px 3px 7px;
+  vertical-align: middle;
+  font-weight: 600;
+}
+
+.infoList__item__more {
+  font-size: 14px;
+  margin: 0;
+  line-height: 28px;
+}
+
+

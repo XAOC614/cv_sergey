@@ -1,0 +1,25 @@
+@import "./src/assets/SASS/variables";
+
+.skill {
+  display: flex;
+  min-width: 200px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-basis: 33%;
+  flex-grow: 1;
+  margin:0 5px 5px 0;
+  border: 1px solid $mainColor;
+  border-radius: 5px;
+
+}
+
+.skill__title {
+  margin: 0;
+  padding: 5px;
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+

@@ -1,0 +1,37 @@
+.getInTouch__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.getInTouch__span {
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    opacity: .8;
+}
+.getInTouch__info {
+    font-size: 18px;
+    text-transform: lowercase;
+    font-weight: 500;
+}
+@media screen and (max-width: 400px)  {
+    .getInTouch__info {
+        font-size: 16px;
+    }
+    .getInTouch__List {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 10px;
+    }
+}
+.getInTouch__List__item:last-child {
+    margin-bottom: 6px;
+}
